@@ -34,11 +34,12 @@ Traveller.prototype.calculateTotalDistanceTravelled = function () {
 };
 
 Traveller.prototype.getUniqueModesOfTransport = function () {
-    return this.journeys.map((journey) => {
-        return journey.transport
+        return this.journeys.map((journey) => { 
+            return journey.transport;
+       }); //make this a variable so that it can be used again. Can i do this???
 
-    });
-
+       // filter out names that match each other
+       // return new array with names
 };
 
 
